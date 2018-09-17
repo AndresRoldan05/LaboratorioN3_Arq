@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script src="websocket.js"></script> 
+      <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head> 
+    <body> 
+        <div id="wrapper"> 
+            <h1>Java chat websocket</h1>
+           <p>Bienvenidos al chat WebSocket. disfruten.</p>
+           <br />
+         <div id="addDevice"> <div class="button">
+                 <a href="#" OnClick="showForm()">Add a chat</a> </div> 
+             <form id="addDeviceForm"> 
+                 <h3>Adicionar un nuevo nickname</h3>
+              <span>Nombre: <input type="text" name="device_name" id="device_name"></span>
+             
+              
+              <input type="button" class="button" value="enviar" onclick=formSubmit()>
+              <input type="reset" class="button" value="Cancel" onclick=hideForm()>
+              </form>
+         </div> 
+           <br />
+           <h3>Currently connected devices:</h3> 
+           <div id="content"> </div>
+    </div>
+    </body> 
+</html> 
